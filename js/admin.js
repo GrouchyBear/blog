@@ -9,9 +9,20 @@ $(function(){
     e.preventDefault();
 
     // Get data from the form and put them into variables
-    var data = $(this).serializeArray(),
+   /* var data = $(this).serializeArray(),
         username = data[0].value,
         password = data[1].value;
+    */
+    Parse.User.logIn(username, password).then(function(user) {
+    var role = user.get("role");
+    if (role == 1) {
+        console.log("login success, role is 1");
+    } else {
+        console.log("login success, role is " + role);
+    }
+}, function(error) {
+    // handle error
+});
 
     // Call Parse Login function with those variables
     Parse.User.logIn(username, password, {
