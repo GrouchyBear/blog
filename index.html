@@ -1,114 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>My Thoughts</title>
-  <meta charset="utf-8">
-  <meta http-equiv="U-XA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Stylsheet -->
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ben Lack | Blog</title>
 
-  <!-- Custom Styling -->
-    <link href="./css/blog.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/blog.css" rel="stylesheet">
+    <link href="css/bootstrap-wysihtml5-0.0.2.css" rel="stylesheet">
 
-  <!-- Scripts -->
-  <script src="./jquery-2.1.4.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+          <a class="blog-nav-item" href="">Home</a>
+          <a class="blog-nav-item" href="#/admin">Admin</a>
+        </nav>
+      </div>
+    </div>
 
-  <!-- Parse APIs -->
-  <script src="http://www.parsecdn.com/js/parse-1.2.19.min.js"></script>
+    <div class="container">
 
-  <!-- Custom javascript -->
-  <script src="./js/main.js"></script>
+      <div class="blog-header">
+        <h1 class="blog-title">My thoughts</h1>
+        <p class="lead blog-description">My Ideas and thought processes.</p>
+      </div>
 
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-   <!--[if lt IE 9]>
-     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-   <![endif]-->
-</head>
+      <div class="row">
 
-<body>
-  <div class="blog-masthead">
-     <div class="container">
-       <nav class="blog-nav">
-         <a class="blog-nav-item active" href="index.html">Home</a>
-         <a class="blog-nav-item" href="admin.html">Admin</a>
-       </nav>
-     </div>
-   </div>
+        <div class="col-sm-8 blog-main">
 
-   <div class="container">
+          <div class="main-container"></div>
 
-     <div class="blog-header">
-       <h1 class="blog-title">The Bootstrap Blog</h1>
-       <p class="lead blog-description">The official example template of creating a blog with Bootstrap.</p>
-     </div>
+        </div><!-- /.blog-main -->
 
-     <div class="row">
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
 
-       <div class="col-sm-8 blog-main">
+        </div><!-- /.blog-sidebar -->
 
-         <div class="main-container"></div>
+      </div><!-- /.row -->
 
-       </div><!-- /.blog-main -->
+    </div><!-- /.container -->
 
-       <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-         <div class="sidebar-module sidebar-module-inset">
-           <h4>About</h4>
-           <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-         </div>
-         <div class="sidebar-module">
-           <h4>Archives</h4>
-           <ol class="list-unstyled">
-             <li><a href="#">March 2014</a></li>
-             <li><a href="#">February 2014</a></li>
-             <li><a href="#">January 2014</a></li>
-             <li><a href="#">December 2013</a></li>
-             <li><a href="#">November 2013</a></li>
-             <li><a href="#">October 2013</a></li>
-             <li><a href="#">September 2013</a></li>
-             <li><a href="#">August 2013</a></li>
-             <li><a href="#">July 2013</a></li>
-             <li><a href="#">June 2013</a></li>
-             <li><a href="#">May 2013</a></li>
-             <li><a href="#">April 2013</a></li>
-           </ol>
-         </div>
-         <div class="sidebar-module">
-           <h4>Elsewhere</h4>
-           <ol class="list-unstyled">
-             <li><a href="#">GitHub</a></li>
-             <li><a href="#">Twitter</a></li>
-             <li><a href="#">Facebook</a></li>
-           </ol>
-         </div>
-       </div><!-- /.blog-sidebar -->
+    <div class="blog-footer">
+      <p>&copy; Ben Lack &middot; 2015</p>
+      <p>Built with <a href="http://parse.com">Parse.js</a></p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </div>
 
-     </div><!-- /.row -->
-
-   </div><!-- /.container -->
-
-   <footer class="blog-footer">
-     <p>Blog template built for <a href="http://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-     <p>
-       <a href="#">Back to top</a>
-     </p>
-   </footer>
-
-   <!-- Other scripts -->
-   <script id="blogs-tpl" type="text/x-handlebars-template">
-
+    <script id="blogs-tpl" type="text/x-handlebars-template">
     {{#each blog}}
     <div class="blog-post">
-      <h2 class="blog-post-title"><a href="#">{{title}}</a></h2>
-      <p class="blog-post-meta">At time by an author</p>
-      <div>{{{content}}}</div>
+      <h2 class="blog-post-title"><a href="#/blog/{{objectId}}">{{title}}</a></h2>
+      <p class="blog-post-meta">At {{time}} by {{authorName}}</p>
+      <div>{{summary}}</div>
     </div>
     {{/each}}
-
     </script>
 
-   <script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
-</body>
+    <script id="categories-tpl" type="text/x-handlebars-template">
+    <div class="sidebar-module">
+      <h4>Categories</h4>
+      <ol class="list-unstyled">
+        {{#each category}}
+        <li><a href="#/category/{{objectId}}">{{name}}</a></li>
+        {{/each}}
+      </ol>
+    </div>
+    </script>
+
+    <script id="blog-tpl" type="text/x-handlebars-template">
+    <div class="blog-post">
+
+      <!-- Blog content -->
+      <h2 class="blog-post-title">{{title}}</h2>
+      <p class="blog-post-meta">At {{time}} by {{authorName}}</p>
+      <div>{{{content}}}</div>
+
+
+    </div>
+    </script>
+
+    <script id="login-tpl" type="text/x-handlebars-template">
+    <form class="form-signin" role="form">
+      <h2 class="form-signin-heading">Please sign in</h2>
+      <input type="text" name="username" class="form-control" placeholder="Username" required="" autofocus="">
+      <input type="password" name="password" class="form-control" placeholder="Password" required="">
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+    </form>
+    </script>
+
+    <script id="admin-tpl" type="text/x-handlebars-template">
+      <h2>Welcome, {{username}}!</h2>
+      <a href="#/add" class="add-blog btn btn-lg btn-primary">Add a New Blog</a>
+      <a href="#/logout" class="add-blog btn btn-lg btn-default">Logout</a>
+      <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Time</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each blog}}
+          <tr>
+            <td><a class="app-link" href="#/edit/{{objectId}}">{{title}}</a></td>
+            <td>{{authorName}}</td>
+            <td>{{time}}</td>
+            <td>
+              <a class="app-link app-edit" href="#/edit/{{objectId}}">Edit</a> |
+              <a class="app-link" href="#/del/{{objectId}}">Delete</a>
+            </td>
+          </tr>
+          {{/each}}
+        </tbody>
+      </table>
+    </script>
+
+    <script id="write-tpl" type="text/x-handlebars-template">
+      <h2>{{form_title}}</h2>
+
+      <form class="form-write" role="form">
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input name="title" type="text" class="form-control" id="title" value="{{title}}"></input>
+        </div>
+        <div class="form-group">
+          <label for="category">Category</label>
+          <select name="category" class="form-control">
+            {{#each categories}}
+            <option value="{{objectId}}" {{#if selected}}selected{{/if}}>{{name}}</option>
+            {{/each}}
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="summary">Summary</label>
+          <textarea name="summary" class="form-control" rows="3">{{{summary}}}</textarea>
+        </div>
+        <div class="form-group">
+          <label for="content">Content</label>
+          <textarea name="content" class="form-control write-content" rows="20">{{{content}}}</textarea>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+      </form>
+    </script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Parse.js -->
+    <script src="http://www.parsecdn.com/js/parse-1.2.19.min.js"></script>
+    <!-- Handlebars.js -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wysihtml5-0.3.0.min.js"></script>
+    <script src="js/bootstrap-wysihtml5-0.0.2.min.js"></script>
+    <script src="js/blog.js"></script>
+  </body>
 </html>
