@@ -220,3 +220,7 @@ a:link, a:visited {
   -o-transition: all .3s;
   transition: all .3s;
 }
+
+a:hover {
+  color: #2980b9;
+}
