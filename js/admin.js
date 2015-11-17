@@ -3,28 +3,28 @@ $(function(){
 
   Parse.initialize("BtWdIpUPO3ajrNeLEia0wTb0DjuFF0p1u1kjDzmR", "PqJo0OEJeSAMPKaiszGEZXUgtRN4FH1hw5aHpZsg");
 
-  var Blog = Parse.Object.extend("Blog"),
-		Blogs = Parse.Collection.extend({
-			model: Blog
-		}),
-		BlogsView = Parse.View.extend({
-			template: Handlebars.compile($('#blogs-tpl').html()),
-			render: function() {
-				var collection = { blog: this.collection.toJSON() };
-				this.$el.html(this.template(collection));
-			}
-		});
-		blogs = new Blogs();
+  $('.form-signin').on('submit', function(e) {
 
-		blogs.fetch({
-			success: function(blogs) {
-				var blogsView = new BlogsView({ collection: blogs });
-				blogsView.render();
-				$('.main-container').html(blogsView.el);
-			},
-			error: function(blogs, error) {
-				console.log(error);
-			}
-		});
+    // Prevent Default Submit Event
+    e.preventDefault();
+
+    // Get data from the form and put them into variables
+    var data = $(this).serializeArray(),
+        username = data[0].value,
+        password = data[1].value;
+
+    // Call Parse Login function with those variables
+    Parse.User.logIn(username, password, {
+        // If the username and password matches
+        success: function(user) {
+            alert('Welcome!');
+        },
+        // If there is an error
+        error: function(user, error) {
+            console.log(error);
+        }
+    });
+
+});
 
 });
