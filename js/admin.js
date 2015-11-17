@@ -9,9 +9,9 @@ $(function(){
     e.preventDefault();
 
     // Get data from the form and put them into variables
-    var data = $(this).serializeArray(),
-        username = data[0].value,
-        password = data[1].value;
+        var data = $(this).serializeArray(),
+            username = data[0].value,
+            password = data[1].value;
     
 
     // Call Parse Login function with those variables
