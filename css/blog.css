@@ -207,3 +207,16 @@ h6, .h6 {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
   }
+
+/*
+* More Styling
+*/
+
+a:link, a:visited {
+  color: #2ecc71;
+  text-decoration: none;
+  -moz-transition: all .3s;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
