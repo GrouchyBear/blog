@@ -13,7 +13,7 @@ $(function(){
             username = data[1].value,
             password = data[2].value;
  */
- Parse.User.logIn("myname", "mypass", {
+ Parse.User.logIn("Grumpy", "test", {
   success: function(user) {
     // Do stuff after successful login.
   },
