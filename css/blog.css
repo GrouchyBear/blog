@@ -3,8 +3,12 @@
  */
 
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: #ecf0f1;
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #444;
+  -webkit-font-smoothing: antialiased;
+  background: #ecf0f1;
+  font-size: .75em;
+  padding-top: 54px;
 }
 
 h1, .h1,
