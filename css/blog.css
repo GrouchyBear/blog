@@ -490,3 +490,7 @@ nav.expanded #navigation {
     font-size: 1.125em;
   }
 }
+
+.fix-name {
+  font-size: 0.75em;
+}
