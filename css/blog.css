@@ -468,3 +468,49 @@ nav.expanded #navigation {
   -o-transition: color .4s;
   transition: color .4s;
 }
+
+/* === ABOVE 768PX === */
+/* =================== */
+
+@media screen and (min-width: 768px){
+  body {
+    font-size: 1.125em;
+  }
+}
+
+/* === FOOTER === */
+/* ============== */
+
+footer {
+  margin-top: 5%;
+  text-align: center;
+  opacity: .7;
+  -moz-transition: all .4s;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+}
+
+footer:hover {
+  opacity: 1;
+}
+
+.twitter-share-button {
+  vertical-align: -15%;
+  margin-right: -25px !important;
+}
+
+.logo {
+  border-bottom: none !important;
+  opacity: .2;
+  padding: 15px;
+  display: inline-block;
+  -moz-transition: all .4s;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+}
+
+.logo:hover {
+  opacity: 1;
+}
