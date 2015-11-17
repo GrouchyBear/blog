@@ -475,7 +475,7 @@ nav.expanded #navigation {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 1.8em;
+  font-size: 1.9em;
   -webkit-transition: color .4s;
   -moz-transition: color .4s;
   -o-transition: color .4s;
@@ -492,5 +492,5 @@ nav.expanded #navigation {
 }
 
 .fix-name {
-  font-size: 1.125em;
+  font-size: 1.6em;
 }
