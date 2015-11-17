@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>My Thoughts</title>
+  <title>My Thoughts | Admin</title>
   <meta charset="utf-8">
   <meta http-equiv="U-XA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,7 +9,7 @@
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 
   <!-- Custom Styling -->
-    <link href="./css/blog.css" rel="stylesheet">
+    <link href="./css/blof.css" rel="stylesheet">
 
   <!-- Scripts -->
   <script src="./jquery-2.1.4.js"></script>
@@ -19,7 +19,7 @@
   <script src="http://www.parsecdn.com/js/parse-1.2.19.min.js"></script>
 
   <!-- Custom javascript -->
-  <script src="./js/main.js"></script>
+  <script src="./js/admin.js"></script>
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
    <!--[if lt IE 9]>
@@ -49,7 +49,19 @@
 
        <div class="col-sm-8 blog-main">
 
-         <div class="main-container"></div>
+         <div class="main-container">
+            <form class="form-signin" role="form">
+              <h2 class="form-signin-heading">Please sign in</h2>
+              <input type="email" class="form-control" placeholder="Email address" required="" autofocus="">
+              <input type="password" class="form-control" placeholder="Password" required="">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox" value="remember-me"> Remember me
+                  </label>
+                </div>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+              </form>
+         </div>
 
        </div><!-- /.blog-main -->
 
