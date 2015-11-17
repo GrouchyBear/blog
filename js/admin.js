@@ -22,7 +22,7 @@ $(function(){
         },
         // If there is an error
         error: function(user, error) {
-            console.log(error);
+            console.log(error + 'Help me');
         }
     });
 
