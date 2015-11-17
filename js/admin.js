@@ -13,7 +13,10 @@ $(function(){
         username = data[0].value,
         password = data[1].value;
     */
-    Parse.User.logIn(username, password).then(function(user) {
+    
+    // work around
+    // TODO fix value error
+    Parse.User.logIn(Grumpy, test).then(function(user) {
     var role = user.get("role");
     if (role == 1) {
         console.log("login success, role is 1");
