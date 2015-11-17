@@ -7,6 +7,8 @@ body {
   color: #444;
   -webkit-font-smoothing: antialiased;
   background: #ecf0f1;
+  font-size: .75em;
+  padding-top: 54px;
 }
 
 h1, .h1,
@@ -449,4 +451,21 @@ nav.expanded #navigation {
   -moz-transition: -moz-transform .5s, -moz-filter .5s;
   -o-transition: -o-transform .5s, -o-filter .5s;
   transition: transform .5s, filter .5s;
+}
+
+[data-icon]:before {
+  font-family: 'sicanstudios-demo';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1.8em;
+  -webkit-transition: color .4s;
+  -moz-transition: color .4s;
+  -o-transition: color .4s;
+  transition: color .4s;
 }
