@@ -515,7 +515,7 @@ ul {
   border-color: #2980b9;
 }
 
-.title {
+.title a {
   text-decoration: none;
   color: #444;
 
