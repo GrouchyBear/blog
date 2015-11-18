@@ -509,5 +509,6 @@ ul {
 }
 
 .btn-success:hover {
-  color: #2980b9;
+  color: #eee;
+  background-color: #2980b9;
 }
