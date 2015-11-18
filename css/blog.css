@@ -517,7 +517,7 @@ ul {
 
 .title a {
   text-decoration: none;
-  color: #444;
+  color: #444 !important;
 
 }
 
