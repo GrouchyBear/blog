@@ -511,4 +511,5 @@ ul {
 .btn-success:hover {
   color: #eee;
   background-color: #2980b9;
+  border-color: #2980b9;
 }
