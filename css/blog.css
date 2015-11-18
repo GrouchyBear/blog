@@ -494,3 +494,9 @@ nav.expanded #navigation {
 .fix-name {
   font-size: 1.6em;
 }
+
+.massiveheading {
+  font-size: 6em;
+  text-align: center;
+  margin: 15% 0;
+}
